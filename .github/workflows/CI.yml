@@ -46,7 +46,7 @@ jobs:
           build para la nueva imagen 
           docker build -t p2gps/web deploy/docker/Clients 
           cp src/Backend/OrderService/build/libs/ordering* deploy/docker/Order/drop #copiar el resultado del build para la nueva imagen 
-            docker build -t p2gps/order deploy/docker/Order 
+          docker build -t p2gps/order deploy/docker/Order 
              
       ### SUBIR IMAGENES A DOCKERHUB ##### 
     - name: Login to DockerHub 
